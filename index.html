@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styling/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <title>Currency converter</title>
+</head>
+<body>
+   <!--<section>
+        <div class="inputs">
+            <label>Rands:</label>
+            <input type="number" id="rands">
+        </div>
+        <div class="inputs">
+            <label>Dollars:</label>
+            <input type="number" id="dollars">
+        </div>
+        <div class="inputs">
+            <label>Euros:</label>
+            <input type="number" id="euros" >
+        </div>
+        <div class="inputs">
+            <label>Pounds:</label>
+            <input type="number" id="pounds">
+        </div>
+    </section>>-->
+   
+    <section class="bg-dark text-centre">
+        <div class="inputs">
+            <h1 class="text-center text-white">Currency Converter</h1>
+            <label class="bg-dark text-white">Amount to convert:</label>
+            <input type="number" id="userinput">
+        </div>
+    
+        <div class="inputs">
+            <span class="bg-dark text-white">From:</span>
+            <select id="fromAmount">
+                <option value="USD">USD</option>
+                <option value="EUR">EUR</option>
+                <option value="GBP">GBP</option>
+                <option value="ZAR">ZAR</option>
+            </select>
+        </div>
+    
+        <div class="inputs">
+            <span class="bg-dark text-white">To:</span>
+            <select id="toAmount">
+                <option value="USD">USD</option>
+                <option value="EUR">EUR</option>
+                <option value="GBP">GBP</option>
+                <option value="ZAR">ZAR</option>
+            </select>
+        </div>
+        <button id="convertBtn" onclick="convert()" class="btn btn-primary">Convert</button>
+        <p id="results" class="bg-dark text-white text-center"></p>
+    </section>
+    
+
+    <script src="./script/code.js"></script>
+</body>
+</html>
